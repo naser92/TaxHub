@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	 <RootNamespace>KSN.TPS.InvoiceHub.Api</RootNamespace>
+  <AssemblyName>KSN.TPS.InvoiceHub.Api</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
+    <PackageReference Include="PDN.TPS.Framework.Ioc" Version="9.0.10.58" />
+    <PackageReference Include="PDN.TPS.Framework.Web" Version="9.0.10.58" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.10" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.Persistence\KSN.TPS.InvoiceHub.Persistence.csproj" />
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.Query.DataContext\KSN.TPS.InvoiceHub.Query.DataContext.csproj" />
+  </ItemGroup>
+
+</Project>

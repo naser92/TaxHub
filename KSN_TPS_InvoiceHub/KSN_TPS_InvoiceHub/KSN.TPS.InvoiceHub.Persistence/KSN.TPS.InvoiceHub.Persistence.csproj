@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.10" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.10" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.10" />
+    <PackageReference Include="PDN.TPS.Framework.Core" Version="9.0.10.58" />
+    <PackageReference Include="PDN.TPS.Framework.Data" Version="1.0.8.49" />
+    <PackageReference Include="PDN.TPS.Framework.Mq" Version="9.0.10.58" />
+    <PackageReference Include="PDN.TPS.Framework.Persistence.EF" Version="9.0.10.58" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.Domain\KSN.TPS.InvoiceHub.Domain.csproj" />
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.Query.DataContext\KSN.TPS.InvoiceHub.Query.DataContext.csproj" />
+  </ItemGroup>
+
+</Project>

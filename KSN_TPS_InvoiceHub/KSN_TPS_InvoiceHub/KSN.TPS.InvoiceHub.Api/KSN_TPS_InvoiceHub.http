@@ -1,0 +1,6 @@
+@KSN.TPS.InvoiceHub_HostAddress = http://localhost:5084
+
+GET {{KSN.TPS.InvoiceHub_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

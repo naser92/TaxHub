@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/Api/">
+    <Project Path="KSN.TPS.InvoiceHub.Api/KSN.TPS.InvoiceHub.Api.csproj" />
+  </Folder>
+  <Folder Name="/Read/">
+    <Project Path="KSN.TPS.InvoiceHub.Query.DataContext/KSN.TPS.InvoiceHub.Query.DataContext.csproj" />
+    <Project Path="KSN.TPS.InvoiceHub.QueryService.Contracts/KSN.TPS.InvoiceHub.QueryService.Contracts.csproj" />
+    <Project Path="KSN.TPS.InvoiceHub.QueryService/KSN.TPS.InvoiceHub.QueryService.csproj" />
+  </Folder>
+  <Folder Name="/Share/" />
+  <Folder Name="/Write/" />
+  <Folder Name="/Write/Application/">
+    <Project Path="KSN.TPS.InvoiceHub.ApplicationService.Contract/KSN.TPS.InvoiceHub.ApplicationService.Contract.csproj" />
+    <Project Path="KSN.TPS.InvoiceHub.ApplicationService/KSN.TPS.InvoiceHub.ApplicationService.csproj" />
+  </Folder>
+  <Folder Name="/Write/Domian/">
+    <Project Path="KSN.TPS.InvoiceHub.Domain/KSN.TPS.InvoiceHub.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Write/Infrastructure/">
+    <Project Path="KSN.TPS.InvoiceHub.Persistence/KSN.TPS.InvoiceHub.Persistence.csproj" />
+  </Folder>
+</Solution>

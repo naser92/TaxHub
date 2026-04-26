@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PDN.TPS.Framework.Core" Version="9.0.10.58" />
+    <PackageReference Include="PDN.TPS.Framework.Services" Version="9.0.10.58" />
+
+    <PackageReference Include="PDN.TPS.Framework.Utility" Version="9.0.10.58" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.QueryService.Contracts\KSN.TPS.InvoiceHub.QueryService.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
