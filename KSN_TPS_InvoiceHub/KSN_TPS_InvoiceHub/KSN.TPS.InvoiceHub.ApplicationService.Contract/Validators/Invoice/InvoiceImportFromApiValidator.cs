@@ -62,9 +62,9 @@ namespace KSN.TPS.InvoiceHub.ApplicationService.Contract.Validators.Invoice
             RuleFor(x => x.BuyerFirstName).HasDangerCharForNames().WithName("نام خریدار");
             RuleFor(x => x.BuyerLastName).HasDangerCharForNames().WithName("نام خانوادگی خریدار");
 
-            //RuleForEach(x => x.InvoiceItems).SetValidator(new InvoiceItemImportFromApiValidator());
-            //RuleForEach(x => x.InvoiceShippedGoods).SetValidator(new InvoiceShippedGoodsImportFromApiValidator());
-            //RuleForEach(x => x.InvoicePayments).SetValidator(new InvoicePaymentImportFromApiValidator());
+            RuleForEach(x => x.InvoiceItems).SetValidator(new InvoiceItemImportFromApiValidator());
+            RuleForEach(x => x.InvoicePayments).SetValidator(new InvoicePaymentImportFromApiValidator());
+            RuleForEach(x => x.InvoiceShippedGoods).SetValidator(new InvoiceShippedGoodsImportFromApiValidator());
         }
     }
 }

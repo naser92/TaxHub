@@ -1,8 +1,12 @@
-﻿using KSN.TPS.InvoiceHub.ApplicationService.Contract.Models.Invoice;
+﻿using KSN.TPS.InvoiceHub.ApplicationService.Contract.Commands;
+using KSN.TPS.InvoiceHub.ApplicationService.Contract.Models.Invoice;
 using KSN.TPS.InvoiceHub.Common;
 using Microsoft.AspNetCore.Mvc;
+using PDN.TPS.Framework.Core;
 using PDN.TPS.Framework.Core.Bus;
 using PDN.TPS.Framework.Core.Security;
+using PDN.TPS.Framework.Extensions;
+using PDN.TPS.Framework.Web;
 using System.ComponentModel.DataAnnotations;
 
 namespace KSN.TPS.InvoiceHub.Api.Controllers
@@ -40,7 +44,11 @@ namespace KSN.TPS.InvoiceHub.Api.Controllers
         [Permission("Create", "ایجاد")]
         public virtual async Task<IActionResult> Post(List<InvoiceImportFromApiVM> invoices)
         {
-            return await _busControl.Send(command).ApiResultAsync();
+
+            if (invoices.IsNullOrEmpty())
+                throw new ResultException("اطلاعاتی جهت ثبت دریافت نشد.");
+
+            return await _busControl.Send(new InvoiceImportFromApiCommand() { Invoices = invoices }).ApiResultAsync();
         }
 
         #endregion
