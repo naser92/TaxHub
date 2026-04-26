@@ -8,7 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="PDN.TPS.Framework.Core.Bus" Version="9.0.10.58" />
+    <PackageReference Include="PDN.TPS.Framework.Validator" Version="9.0.10.58" />
     <PackageReference Include="PDN.TPS.Framework.ViewModels" Version="9.0.10.58" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.Common\KSN.TPS.InvoiceHub.Common.csproj" />
   </ItemGroup>
 
 </Project>

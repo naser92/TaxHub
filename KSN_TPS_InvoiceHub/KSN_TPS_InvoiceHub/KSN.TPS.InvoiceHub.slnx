@@ -7,7 +7,9 @@
     <Project Path="KSN.TPS.InvoiceHub.QueryService.Contracts/KSN.TPS.InvoiceHub.QueryService.Contracts.csproj" />
     <Project Path="KSN.TPS.InvoiceHub.QueryService/KSN.TPS.InvoiceHub.QueryService.csproj" />
   </Folder>
-  <Folder Name="/Share/" />
+  <Folder Name="/Share/">
+    <Project Path="KSN.TPS.InvoiceHub.Common/KSN.TPS.InvoiceHub.Common.csproj" Id="b8b1dfcc-dac8-4ad0-ac48-6f1d1931ee2f" />
+  </Folder>
   <Folder Name="/Write/" />
   <Folder Name="/Write/Application/">
     <Project Path="KSN.TPS.InvoiceHub.ApplicationService.Contract/KSN.TPS.InvoiceHub.ApplicationService.Contract.csproj" />

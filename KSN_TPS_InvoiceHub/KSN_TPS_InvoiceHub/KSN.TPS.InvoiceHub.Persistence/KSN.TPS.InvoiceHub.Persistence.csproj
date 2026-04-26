@@ -20,7 +20,6 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.10" />
 	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.10" />
     <PackageReference Include="PDN.TPS.Framework.Core" Version="9.0.10.58" />
-    <PackageReference Include="PDN.TPS.Framework.Data" Version="1.0.8.49" />
     <PackageReference Include="PDN.TPS.Framework.Mq" Version="9.0.10.58" />
     <PackageReference Include="PDN.TPS.Framework.Persistence.EF" Version="9.0.10.58" />
   </ItemGroup>

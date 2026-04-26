@@ -3,10 +3,16 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
+	  <OutputType>Exe</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
 	 <RootNamespace>KSN.TPS.InvoiceHub.Api</RootNamespace>
   <AssemblyName>KSN.TPS.InvoiceHub.Api</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\InvoiceInboxController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
@@ -21,8 +27,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.ApplicationService.Contract\KSN.TPS.InvoiceHub.ApplicationService.Contract.csproj" />
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.Common\KSN.TPS.InvoiceHub.Common.csproj" />
     <ProjectReference Include="..\KSN.TPS.InvoiceHub.Persistence\KSN.TPS.InvoiceHub.Persistence.csproj" />
     <ProjectReference Include="..\KSN.TPS.InvoiceHub.Query.DataContext\KSN.TPS.InvoiceHub.Query.DataContext.csproj" />
+    <ProjectReference Include="..\KSN.TPS.InvoiceHub.QueryService.Contracts\KSN.TPS.InvoiceHub.QueryService.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

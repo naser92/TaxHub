@@ -1,9 +1,8 @@
-﻿using System;
-using PDN.TPS.Framework.Data;
+﻿using PDN.TPS.Framework.Persistence.EF;
 
 namespace KSN.TPS.InvoiceHub.Domain
 {
-    public interface IInvoiceBatchWriteRepository : IWriteRepository<InvoiceBatch,Guid>
+    public interface IInvoiceBatchWriteRepository : IWriteRepository<InvoiceBatch, Guid>
     {
 
     }

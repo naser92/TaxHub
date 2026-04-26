@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="PDN.TPS.Framework.Extensions" Version="9.0.10.58" />
+    <PackageReference Include="PDN.TPS.Framework.TaxUniqueSerial" Version="9.0.10.58" />
+  </ItemGroup>
+
+</Project>
