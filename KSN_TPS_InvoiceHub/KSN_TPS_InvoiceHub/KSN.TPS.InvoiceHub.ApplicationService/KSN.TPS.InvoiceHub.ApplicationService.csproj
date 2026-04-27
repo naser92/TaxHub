@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="PDN.TPS.Framework.Core.Bus" Version="9.0.10.58" />
+    <PackageReference Include="Ulid" Version="1.4.1" />
   </ItemGroup>
 
   <ItemGroup>
